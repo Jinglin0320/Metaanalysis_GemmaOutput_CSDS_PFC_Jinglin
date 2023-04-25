@@ -77,23 +77,17 @@ AligningDatasets<-function(ListOfDEResults){
 
 #Example Usage;
 
-ListOfDEResults<-list(DEResults_GSE109315, DEResults_GSE114224_Left, DEResults_GSE114224_Right, DEResults_GSE81672, DEResults_GSE85472,DEResults_GSE81587,DEResults_GSE102556.1,DEResults_GSE151807)
+ListOfDEResults<-list(DEResults_GSE109315, DEResults_GSE81672, DEResults_GSE85472,DEResults_GSE81587,DEResults_GSE102556.1,DEResults_GSE151807)
 
 
 
 AligningDatasets(ListOfDEResults)
 # [1] "MetaAnalysis_FoldChange_Dfs:"
-# List of 8
+# List of 6
 # $ :'data.frame':	32953 obs. of  3 variables:
 #   ..$ x                                     : chr [1:32953] "0610005C13Rik" "0610006L08Rik" "0610009B22Rik" "0610009E02Rik" ...
 # ..$ GSE109315_StressResilient_Vs_Control  : num [1:32953] -0.084 -0.0858 0.0425 -0.408 0.2268 ...
 # ..$ GSE109315_StressSusceptible_Vs_Control: num [1:32953] 0.1929 -0.0733 -0.0991 -0.0613 0.3685 ...
-# $ :'data.frame':	15951 obs. of  2 variables:
-#   ..$ x                             : chr [1:15951] "0610009B22Rik" "0610010K14Rik" "0610012G03Rik" "0610040J01Rik" ...
-# ..$ GSE114224_Left_CSDS_vs_Control: num [1:15951] -0.0093 0.02176 -0.01592 0.00432 -0.021 ...
-# $ :'data.frame':	15949 obs. of  2 variables:
-#   ..$ x                              : chr [1:15949] "0610009B22Rik" "0610010K14Rik" "0610012G03Rik" "0610040J01Rik" ...
-# ..$ GSE114224_Right_CSDS_vs_Control: num [1:15949] 0.002769 0.02463 0.02097 0.000499 -0.003534 ...
 # $ :'data.frame':	21628 obs. of  3 variables:
 #   ..$ x                                    : chr [1:21628] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # ..$ GSE81672_StressResilient_Vs_Control  : num [1:21628] -0.7165 -0.0636 0.6613 0.1336 0.0292 ...
@@ -112,12 +106,10 @@ AligningDatasets(ListOfDEResults)
 # ..$ GSE151807_CUMS_vs_Control: num [1:18537] -0.033 -0.1549 0.1254 0.036 -0.0529 ...
 # NULL
 # [1] "MetaAnalysis_FoldChanges:"
-# 'data.frame':	35237 obs. of  11 variables:
+# 'data.frame':	35210 obs. of  9 variables:
 #   $ x                                     : chr  "0610005C13Rik" "0610006L08Rik" "0610009B22Rik" "0610009E02Rik" ...
 # $ GSE109315_StressResilient_Vs_Control  : num  -0.084 -0.0858 0.0425 -0.408 0.2268 ...
 # $ GSE109315_StressSusceptible_Vs_Control: num  0.1929 -0.0733 -0.0991 -0.0613 0.3685 ...
-# $ GSE114224_Left_CSDS_vs_Control        : num  NA NA -0.0093 NA NA ...
-# $ GSE114224_Right_CSDS_vs_Control       : num  NA NA 0.00277 NA NA ...
 # $ GSE81672_StressResilient_Vs_Control   : num  -0.7165 NA -0.0636 0.6613 0.1336 ...
 # $ GSE81672_StressSusceptible_Vs_Control : num  -1.667 NA -0.0998 -1.264 -0.2959 ...
 # $ GSE85472_CSDS_vs_Control              : num  NA NA -0.035 NA 0.0365 ...
@@ -126,17 +118,11 @@ AligningDatasets(ListOfDEResults)
 # $ GSE151807_CUMS_vs_Control             : num  -0.033 NA -0.155 NA 0.125 ...
 # NULL
 # [1] "MetaAnalysis_SV_Dfs:"
-# List of 8
+# List of 6
 # $ :'data.frame':	32953 obs. of  3 variables:
 #   ..$ x                                     : chr [1:32953] "0610005C13Rik" "0610006L08Rik" "0610009B22Rik" "0610009E02Rik" ...
 # ..$ GSE109315_StressResilient_Vs_Control  : num [1:32953] 0.1704 0.0202 0.0063 0.1143 0.0344 ...
 # ..$ GSE109315_StressSusceptible_Vs_Control: num [1:32953] 0.09173 0.01089 0.00339 0.06156 0.01856 ...
-# $ :'data.frame':	15951 obs. of  2 variables:
-#   ..$ x                             : chr [1:15951] "0610009B22Rik" "0610010K14Rik" "0610012G03Rik" "0610040J01Rik" ...
-# ..$ GSE114224_Left_CSDS_vs_Control: num [1:15951] 1.91e-04 6.80e-05 1.20e-04 4.90e-05 6.32e-05 ...
-# $ :'data.frame':	15949 obs. of  2 variables:
-#   ..$ x                              : chr [1:15949] "0610009B22Rik" "0610010K14Rik" "0610012G03Rik" "0610040J01Rik" ...
-# ..$ GSE114224_Right_CSDS_vs_Control: num [1:15949] 1.24e-04 1.30e-04 1.78e-04 1.63e-04 7.44e-05 ...
 # $ :'data.frame':	21628 obs. of  3 variables:
 #   ..$ x                                    : chr [1:21628] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # ..$ GSE81672_StressResilient_Vs_Control  : num [1:21628] 0.77289 0.00638 0.23854 0.04249 0.011 ...
@@ -155,12 +141,10 @@ AligningDatasets(ListOfDEResults)
 # ..$ GSE151807_CUMS_vs_Control: num [1:18537] 0.02327 0.00238 0.00343 0.00324 0.00259 ...
 # NULL
 # [1] "MetaAnalysis_SV:"
-# 'data.frame':	35237 obs. of  11 variables:
+# 'data.frame':	35210 obs. of  9 variables:
 #   $ x                                     : chr  "0610005C13Rik" "0610006L08Rik" "0610009B22Rik" "0610009E02Rik" ...
 # $ GSE109315_StressResilient_Vs_Control  : num  0.1704 0.0202 0.0063 0.1143 0.0344 ...
 # $ GSE109315_StressSusceptible_Vs_Control: num  0.09173 0.01089 0.00339 0.06156 0.01856 ...
-# $ GSE114224_Left_CSDS_vs_Control        : num  NA NA 0.000191 NA NA ...
-# $ GSE114224_Right_CSDS_vs_Control       : num  NA NA 0.000124 NA NA ...
 # $ GSE81672_StressResilient_Vs_Control   : num  0.77289 NA 0.00638 0.23854 0.04249 ...
 # $ GSE81672_StressSusceptible_Vs_Control : num  0.91575 NA 0.00756 0.28301 0.0504 ...
 # $ GSE85472_CSDS_vs_Control              : num  NA NA 0.00185 NA 0.00309 ...
@@ -352,8 +336,8 @@ hist(MetaAnalysis_FoldChanges_NAsPerRow)
 #Or, since there are a limited number of integer answers (0-11), I could make a table of the results:
 table(MetaAnalysis_FoldChanges_NAsPerRow)
 # MetaAnalysis_FoldChanges_NAsPerRow
-# 0     1     2     3     4     5     6     7     8     9 
-# 12163  1257  2349  1766  5184  1444  1392  2453  5366  1863 
+# 0     1     2     3     4     5     6     7 
+# 14733  2104  4542  1051  2104  3176  5500  2000
 
 
 #5 NAs is too many
@@ -415,9 +399,9 @@ RunBasicMetaAnalysis<-function(NumberOfComparisons, CutOffForNAs, MetaAnalysis_F
 }
 
 #Example Usage:
-NumberOfComparisons=11
-CutOffForNAs=5
-#I want at least 7 datasets (so 5 na's is too many)
+NumberOfComparisons=8
+CutOffForNAs=3
+#I want at least 5 datasets (so 3 na's is too many)
 
 metaOutput<-RunBasicMetaAnalysis(NumberOfComparisons, CutOffForNAs, MetaAnalysis_FoldChanges, MetaAnalysis_SV)
 #Note: this function can take a while to run, especially if you have a lot of data  
@@ -425,15 +409,13 @@ metaOutput<-RunBasicMetaAnalysis(NumberOfComparisons, CutOffForNAs, MetaAnalysis
 
 # [1] "Table of # of NAs per Row (Gene):"
 # MetaAnalysis_FoldChanges_NAsPerRow
-# 0     1     2     3     4     5     6     7     8     9 
-# 12163  1257  2349  1766  5184  1444  1392  2453  5366  1863 
+# 0     1     2     3     4     5     6     7 
+# 14733  2104  4542  1051  2104  3176  5500  2000 
 # [1] "MetaAnalysis_FoldChanges_ForMeta:"
-# 'data.frame':	22719 obs. of  11 variables:
+# 'data.frame':	21379 obs. of  9 variables:
 #   $ x                                     : chr  "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # $ GSE109315_StressResilient_Vs_Control  : num  -0.084 0.0425 -0.408 0.2268 -0.0261 ...
 # $ GSE109315_StressSusceptible_Vs_Control: num  0.1929 -0.0991 -0.0613 0.3685 0.0872 ...
-# $ GSE114224_Left_CSDS_vs_Control        : num  NA -0.0093 NA NA 0.0218 ...
-# $ GSE114224_Right_CSDS_vs_Control       : num  NA 0.00277 NA NA 0.02463 ...
 # $ GSE81672_StressResilient_Vs_Control   : num  -0.7165 -0.0636 0.6613 0.1336 0.0292 ...
 # $ GSE81672_StressSusceptible_Vs_Control : num  -1.667 -0.0998 -1.264 -0.2959 -0.0832 ...
 # $ GSE85472_CSDS_vs_Control              : num  NA -0.035 NA 0.0365 -0.116 ...
@@ -444,28 +426,28 @@ metaOutput<-RunBasicMetaAnalysis(NumberOfComparisons, CutOffForNAs, MetaAnalysis
 # There were 50 or more warnings (use warnings() to see the first 50)
 
 str(metaOutput)
-# num [1:22719, 1:6] 0.0167 -0.0403 -0.1559 0.061 0.0195 ...
+# num [1:21379, 1:6] 0.0167 -0.0747 -0.1559 0.061 NA ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:22719] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
+# ..$ : chr [1:21379] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # ..$ : chr [1:6] "Log2FC_estimate" "SE" "pval" "CI_lb" ...
 
 head(metaOutput)
-# Log2FC_estimate          SE        pval        CI_lb       CI_ub Number_Of_Comparisons
-# 0610005C13Rik     0.016699109 0.122156587 0.891265966 -0.222723403 0.256121621                     8
-# 0610009B22Rik    -0.040267582 0.021094106 0.056268619 -0.081611271 0.001076107                    11
-# 0610009E02Rik    -0.155860725 0.203530042 0.443802860 -0.554772277 0.243050827                     7
-# 0610009L18Rik     0.060979966 0.071008591 0.390468055 -0.078194314 0.200154246                     9
-# 0610010K14Rik     0.019489738 0.006505182 0.002735172  0.006739815 0.032239661                    11
-# 0610012G03Rik    -0.005078878 0.012221231 0.677718637 -0.029032051 0.018874295                    11
+# Log2FC_estimate         SE        pval       CI_lb       CI_ub Number_Of_Comparisons
+# 0610005C13Rik      0.01669911 0.12215659 0.891265966 -0.22272340  0.25612162                     7
+# 0610009B22Rik     -0.07469098 0.02625531 0.004443999 -0.12615044 -0.02323152                     8
+# 0610009E02Rik     -0.15586073 0.20353004 0.443802860 -0.55477228  0.24305083                     6
+# 0610009L18Rik      0.06097997 0.07100859 0.390468055 -0.07819431  0.20015425                     8
+# 0610010K14Rik              NA         NA          NA          NA          NA                    NA
+# 0610012G03Rik     -0.01917447 0.02131852 0.368424688 -0.06095800  0.02260905                     8
 
 tail(metaOutput)
-# Log2FC_estimate          SE       pval        CI_lb      CI_ub Number_Of_Comparisons
-# Strbp    0.0009552082 0.006320727 0.87987856 -0.011433189 0.01334361                     9
-# Syne1   -0.0005225234 0.005903905 0.92947554 -0.012093965 0.01104892                     9
-# Ttc3     0.0148097236 0.015399964 0.33621408 -0.015373651 0.04499310                     8
-# Usp9x    0.0017593789 0.004807233 0.71437571 -0.007662626 0.01118138                     9
-# Cltc    -0.0134662132 0.016368860 0.41069417 -0.045548589 0.01861616                     7
-# Macf1    0.0536989659 0.024213487 0.02657328  0.006241404 0.10115653                     7
+# Log2FC_estimate         SE       pval       CI_lb      CI_ub Number_Of_Comparisons
+# Rbfox1    -0.088535986 0.05127015 0.08419413 -0.18902362 0.01195165                     6
+# Rdm1      -0.009165529 0.03793818 0.80909699 -0.08352300 0.06519194                     6
+# Sptbn2     0.021831028 0.02289131 0.34024478 -0.02303512 0.06669718                     6
+# Strbp     -0.020423210 0.03600057 0.57050879 -0.09098304 0.05013662                     6
+# Syne1      0.035722253 0.03279338 0.27601585 -0.02855158 0.09999609                     6
+# Usp9x      0.032049354 0.02658717 0.22803176 -0.02006054 0.08415924                     6
 ########################################
 
 ## Multiple Comparison corrections
@@ -493,7 +475,7 @@ tempPvalAdjMeta<-mt.rawp2adjp(metaOutput[,3], proc=c("BH"))
 metaPvalAdj<-tempPvalAdjMeta$adjp[order(tempPvalAdjMeta$index),]
 
 str(metaPvalAdj)
-# num [1:22719, 1:2] 0.89127 0.05627 0.4438 0.39047 0.00274 ...
+# num [1:21379, 1:2] 0.89127 0.00444 0.4438 0.39047 NA ...
 # - attr(*, "dimnames")=List of 2
 # ..$ : NULL
 # ..$ : chr [1:2] "rawp" "BH"
@@ -507,9 +489,9 @@ plot(metaPvalAdj[,1]~metaOutput[,3])
 metaOutputFDR<-cbind(metaOutput, metaPvalAdj[,2])
 
 str(metaOutputFDR)
-# num [1:22719, 1:7] 0.0167 -0.0403 -0.1559 0.061 0.0195 ...
+# num [1:21379, 1:7] 0.0167 -0.0747 -0.1559 0.061 NA ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:22719] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
+# ..$ : chr [1:21379] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # ..$ : chr [1:7] "Log2FC_estimate" "SE" "pval" "CI_lb" ...
 
 #Let's functionalize it!
@@ -549,22 +531,29 @@ FalseDiscoveryCorrection<-function(metaOutput){
 #Example usage:
 
 FalseDiscoveryCorrection(metaOutput)
-# [1] "metaOutputFDR:"
-# num [1:19838, 1:7] 0.0167 -0.03858 -0.05958 0.0753 0.00285 ...
+# # [1] "metaOutputFDR:"
+# num [1:21379, 1:7] 0.0167 -0.0747 -0.1559 0.061 NA ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:19838] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
+# ..$ : chr [1:21379] "0610005C13Rik" "0610009B22Rik" "0610009E02Rik" "0610009L18Rik" ...
 # ..$ : chr [1:7] "Log2FC_estimate" "SE" "pval" "CI_lb" ...
 # NULL
 # [1] "Do we have any genes that are statistically significant following false discovery rate correction?"
-# [1] 494
+# [1] 337
 # [1] "What are the top results?"
-# Log2FC_estimate          SE         pval       CI_lb       CI_ub Number_Of_Comparisons          FDR
-# Col5a1       0.04374801 0.003085410 1.236047e-45  0.03770072  0.04979530                    11 2.452069e-41
-# Nars        -0.03089716 0.003375091 5.462673e-20 -0.03751221 -0.02428210                    11 5.418426e-16
-# Shisa7       0.03192035 0.003683342 4.470208e-18  0.02470114  0.03913957                    11 2.955999e-14
-# Rgs10       -0.03190231 0.003830416 8.174991e-17 -0.03940978 -0.02439483                    11 4.054387e-13
-# Tmem267      0.03030467 0.003933888 1.323993e-14  0.02259439  0.03801495                    11 5.253075e-11
-# Prmt1        0.03296609 0.004337612 2.960050e-14  0.02446453  0.04146765                    11 9.786914e-11
+# Log2FC_estimate         SE         pval       CI_lb       CI_ub Number_Of_Comparisons
+# Erdr1             -0.42889744 0.05735677 7.562710e-14 -0.54131464 -0.31648025                     7
+# Lman2l             0.13479568 0.01930629 2.910992e-12  0.09695604  0.17263532                     8
+# 1810021B22Rik     -0.27231591 0.04295413 2.302269e-10 -0.35650446 -0.18812736                     7
+# Pvalb             -0.21567088 0.03591689 1.916619e-09 -0.28606669 -0.14527507                     8
+# Bnip3             -0.12383268 0.02068556 2.144961e-09 -0.16437563 -0.08328972                     8
+# Sf3b3              0.06496192 0.01167964 2.667336e-08  0.04207024  0.08785360                     8
+# FDR
+# Erdr1         1.616832e-09
+# Lman2l        3.111705e-08
+# 1810021B22Rik 1.640674e-06
+# Pvalb         9.171425e-06
+# Bnip3         9.171425e-06
+# Sf3b3         9.504161e-05
 ############################
 
 #10) Determine which are the top differentially expressed genes and create forest 
@@ -572,21 +561,23 @@ FalseDiscoveryCorrection(metaOutput)
 #across the different studies. 
 
 row.names(metaOutputFDR_OrderbyPval)[c(1:100)]
-# [1] "Col5a1"        "Nars"          "Rgs10"         "Shisa7"        "Tmem267"       "Prmt1"         "Tceal3"       
-# [8] "Prr7"          "Stk32c"        "Usp32"         "Ramp3"         "Pou1f1"        "P2ry12"        "Tdrd7"        
-# [15] "Zmat3"         "1810021B22Rik" "Rad23b"        "Actr1a"        "Cmpk2"         "Pcdhb20"       "Lor"          
-# [22] "Klhl7"         "Acsbg1"        "Lrrtm3"        "Map10"         "Ptk2"          "Gmds"          "Med20"        
-# [29] "Lonrf2"        "Pex26"         "Adam9"         "Rwdd4a"        "Sqor"          "Lrpap1"        "Gm26782"      
-# [36] "Exosc7"        "Zfx"           "Opn3"          "Crym"          "Hax1"          "Spink10"       "Stard3nl"     
-# [43] "Hsd11b1"       "Zfp397"        "Tpst1"         "Rora"          "Ccdc85b"       "Clpp"          "Nudt18"       
-# [50] "Pycr2"         "Ankrd39"       "Amz2"          "Slc7a10"       "Slc39a12"      "Srcin1"        "Trappc6b"     
-# [57] "Hnrnpa2b1"     "Casp8"         "Nxnl2"         "Tubg2"         "Hdgfl2"        "Kcnq2"         "Kmt5c"        
-# [64] "Blvrb"         "Ndfip1"        "Rab5c"         "Ptdss1"        "Ptgds"         "Smg6"          "Ssx2ip"       
-# [71] "Impdh2"        "Ndufa5"        "Htr1d"         "Dbpht2"        "Top2b"         "Snrnp27"       "Dnase1l1"     
-# [78] "Eef2"          "Or13c7"        "Fam98a"        "Dmap1"         "Pdcd7"         "Lypd1"         "Fgf12"        
-# [85] "Dis3"          "Hikeshi"       "Gm46920"       "Pld4"          "Aldoa"         "Cxcl13"        "Tmem128"      
-# [92] "Cacybp"        "Gm46945"       "Rpp21"         "Smim3"         "Lpp"           "Nceh1"         "Ccdc102a"     
-# [99] "Micos13"       "Mmp24"       
+# [1] "Erdr1"         "Lman2l"        "1810021B22Rik" "Pvalb"         "Bnip3"         "Sf3b3"        
+# [7] "Ccne1"         "Gm26782"       "1110059G10Rik" "Trappc6b"      "Bloc1s5"       "Grk3"         
+# [13] "Tbc1d17"       "Irgm1"         "Hs2st1"        "Nol7"          "Hsf5"          "Ccl6"         
+# [19] "Gpcpd1"        "B230217C12Rik" "Ypel4"         "Gnl3"          "Asb11"         "Abcc5"        
+# [25] "Asf1b"         "Upf1"          "Gm46920"       "Gria1"         "Gm46945"       "Lyrm4"        
+# [31] "Cplx3"         "Pnck"          "Rnf144a"       "Hectd4"        "Ddb1"          "Nudt4"        
+# [37] "Gm15631"       "2410018L13Rik" "Tfrc"          "Coa6"          "Gbe1"          "Abi3"         
+# [43] "BC004004"      "Ghitm"         "Gm36163"       "Samd14"        "Gm30539"       "4930429B21Rik"
+# [49] "Igdcc4"        "Phyh"          "2010320M18Rik" "Sptbn4"        "Ube2g1"        "Spa17"        
+# [55] "Tagln2"        "Smarca2"       "Gm38418"       "Nudcd2"        "Rgs7"          "Zer1"         
+# [61] "LOC108168680"  "Srek1ip1"      "Galnt16"       "Sez6l"         "Baiap2"        "Cacna1h"      
+# [67] "Orc2"          "Clybl"         "Ly86"          "Ryr3"          "Gm29994"       "Sh3bgrl"      
+# [73] "Asph"          "Btbd9"         "Lair1"         "Abcc2"         "Gm30392"       "Gm46405"      
+# [79] "Numa1"         "Gcnt4"         "Cenpx"         "Mybbp1a"       "Gm14199"       "Gm14124"      
+# [85] "Dhx30"         "Slc39a8"       "Rps6ka4"       "Cstad"         "Hmgb1"         "Coq10b"       
+# [91] "Alpl"          "Sh3yl1"        "Cfap97d2"      "Gm1043"        "Ndufaf2"       "Gm973"        
+# [97] "Cldn1"         "Dbr1"          "Nufip1"        "Ip6k1"             
 
 #Let's plot some of those top results!
 
@@ -608,15 +599,15 @@ MakeForestPlots<-function(GeneSymbol){
 }
 
 
-MakeForestPlots("Col5a1") 
-MakeForestPlots("Nars") 
-MakeForestPlots("Rgs10")
-MakeForestPlots("Shisa7") 
-MakeForestPlots("Tmem267") 
-MakeForestPlots("Prmt1")
-MakeForestPlots("Tceal3") # warning
-MakeForestPlots("Prr7")# warning
-MakeForestPlots("Stk32c")
+MakeForestPlots("Erdr1") 
+MakeForestPlots("Lman2l") 
+MakeForestPlots("1810021B22Rik")
+MakeForestPlots("Pvalb") 
+MakeForestPlots("Bnip3") 
+MakeForestPlots("Sf3b3")
+MakeForestPlots("Ccne1") # warning
+MakeForestPlots("Gm26782")# warning
+MakeForestPlots("1110059G10Rik")
 # Warning message:
 #   Studies with NAs omitted from model fitting. 
 
@@ -628,27 +619,28 @@ MakeForestPlots("Stk32c")
 #Here's a summary of the distribution for the Log2FCs
 summary(metaOutputFDR[,1])
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA's 
-# -1.21067 -0.01378  0.00009 -0.00031  0.01191  1.58796       50 
-
+# -1.21067 -0.03781 -0.00099 -0.00048  0.03370  1.58796      107 
 # how many are statistically significant
 sum(metaOutputFDR[,7]<0.05, na.rm = TRUE)
-# [1] 334
+# [1] 171
 # store significant data
 metaOutputSig <- metaOutputFDR[metaOutputFDR[,7]<0.05,]
 # remove na
 metaOutputSigNoNa <- na.omit(metaOutputSig)
+
 # count upregulated genes
 metaOutputupregulated <- metaOutputSigNoNa[metaOutputSigNoNa[,1]>0,]
+
 str(metaOutputupregulated)
-# num [1:163, 1:7] 0.0218 0.0171 0.0128 0.0308 0.0203 ...
+# num [1:58, 1:7] 0.1255 0.0889 0.0837 0.0797 0.0661 ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:163] "1700030K09Rik" "2310039H08Rik" "3110070M22Rik" "Actr1a" ...
+# ..$ : chr [1:58] "Abcc2" "Abcc5" "Atp13a1" "Baiap2" ...
 # ..$ : chr [1:7] "Log2FC_estimate" "SE" "pval" "CI_lb" ...
 metaOutputdownregulated <- metaOutputSigNoNa[metaOutputSigNoNa[,1]<0,]
 str(metaOutputdownregulated)
-# num [1:171, 1:7] -0.104 -0.204 -0.272 -0.168 -0.377 ...
+# num [1:113, 1:7] -0.111 -0.104 -0.272 -0.168 -0.377 ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:171] "1700066M21Rik" "1810019D21Rik" "1810021B22Rik" "2010320M18Rik" ...
+# ..$ : chr [1:113] "1110059G10Rik" "1700066M21Rik" "1810021B22Rik" "2010320M18Rik" ...
 # ..$ : chr [1:7] "Log2FC_estimate" "SE" "pval" "CI_lb" ...
 
 
@@ -656,30 +648,40 @@ str(metaOutputdownregulated)
 #Let's see how many results are both statistically significant 
 #(using a more conservative FDR) and have a larger estimated Log2FC (>0.10 or <-0.10)
 sum(metaOutputFDR[,7]<0.05 & abs(metaOutputFDR[,1])>0.1, na.rm=TRUE)
-#[1] 44
+#[1] 92
 
 #What are their gene symbols?
 row.names(metaOutputFDR_OrderbyPval)[metaOutputFDR_OrderbyPval[,7]<0.05 & 
                                        abs(metaOutputFDR_OrderbyPval[,1])>0.1 & 
                                        is.na(metaOutputFDR_OrderbyPval[,1])==FALSE]
-# [1] "1810021B22Rik" "Gm26782"       "Gm46920"       "Gm46945"       "Gm15631"       "2410018L13Rik" "Gm36163"      
-# [8] "Gm30539"       "4930429B21Rik" "2010320M18Rik" "Tagln2"        "Gm38418"       "LOC108168680"  "Gm29994"      
-# [15] "Gm30392"       "Gm46405"       "Gcnt4"         "Gm14199"       "Gm14124"       "Hmgb1"         "Cfap97d2"     
-# [22] "Gm1043"        "Ckap2"         "Gm34140"       "Gm33931"       "1700066M21Rik" "Gm36603"       "Slc44a5"      
-# [29] "Xlr3b"         "Gm34922"       "Gm31465"       "Gm30142"       "Cd99"          "Csmd2"         "Gm40564"      
-# [36] "A330009N23Rik" "Mnd1"          "Gm11627"       "Gm33324"       "1810019D21Rik" "Gm12519"       "Gm14305"      
+# [1] "Erdr1"         "Lman2l"        "1810021B22Rik" "Pvalb"         "Bnip3"         "Ccne1"        
+# [7] "Gm26782"       "1110059G10Rik" "Bloc1s5"       "Tbc1d17"       "Irgm1"         "Nol7"         
+# [13] "Hsf5"          "Ccl6"          "Gpcpd1"        "Ypel4"         "Asb11"         "Asf1b"        
+# [19] "Upf1"          "Gm46920"       "Gm46945"       "Lyrm4"         "Cplx3"         "Pnck"         
+# [25] "Rnf144a"       "Nudt4"         "Gm15631"       "2410018L13Rik" "Tfrc"          "Coa6"         
+# [31] "Gbe1"          "Abi3"          "Gm36163"       "Samd14"        "Gm30539"       "4930429B21Rik"
+# [37] "2010320M18Rik" "Sptbn4"        "Spa17"         "Tagln2"        "Gm38418"       "Nudcd2"       
+# [43] "LOC108168680"  "Cacna1h"       "Ly86"          "Ryr3"          "Gm29994"       "Lair1"        
+# [49] "Abcc2"         "Gm30392"       "Gm46405"       "Gcnt4"         "Gm14199"       "Gm14124"      
+# [55] "Cstad"         "Hmgb1"         "Coq10b"        "Sh3yl1"        "Cfap97d2"      "Gm1043"       
+# [61] "Cldn1"         "Tmem144"       "Ckap2"         "Ptn"           "Dbf4"          "Gm34140"      
+# [67] "Trarg1"        "Gm33931"       "Crym"          "1700066M21Rik" "Gm36603"       "Maf"          
+# [73] "Akr1b8"        "Tlr3"          "Ifi44"         "Gpr34"         "Slc44a5"       "Sp100"        
+# [79] "Xlr3b"         "Mettl18"       "Stk17b"        "F2rl2"         "Gm34922"       "Pstpip2"      
+# [85] "Gm31465"       "Htr2c"         "Lhfp"          "Gm30142"       "Cd99"          "Csmd2"        
+# [91] "Hmgcs2"        "Gm40564"      
 # [43] "Gm39805"       "Gm38561" 
 
-MakeForestPlots("Gm26782")
+MakeForestPlots("Erdr1")
 # Warning message:
 #   Studies with NAs omitted from model fitting. 
-MakeForestPlots("Gm30539")
+MakeForestPlots("Lman2l")
 # Warning message:
 #   Studies with NAs omitted from model fitting. 
-MakeForestPlots("Gm15631") 
+MakeForestPlots("1810021B22Rik") 
 # Warning message:
 #   Studies with NAs omitted from model fitting. 
-MakeForestPlots("2410018L13Rik") 
+MakeForestPlots("Pvalb") 
 # Warning message:
 #   Studies with NAs omitted from model fitting. 
 
@@ -692,7 +694,7 @@ colnames(metaOutputFDR)
 # [5] "CI_ub"                 "Number_Of_Comparisons" "FDR" 
 
 sum(metaOutputFDR[,7]<0.05 & metaOutputFDR[,6]>5, na.rm=TRUE)
-#[1] 344
+#[1] 171
 
 row.names(metaOutputFDR_OrderbyPval)[metaOutputFDR_OrderbyPval[,7]<0.05 & 
                                        metaOutputFDR_OrderbyPval[,6]>5 & 
@@ -700,92 +702,84 @@ row.names(metaOutputFDR_OrderbyPval)[metaOutputFDR_OrderbyPval[,7]<0.05 &
 
 #Adding in a p-value threshold too:
 sum(metaOutputFDR[,7]<0.05 & metaOutputFDR[,6]>5 & metaOutputFDR[,3]<0.00001, na.rm=TRUE)
-#[1] 84
+#[1] 25
 
 row.names(metaOutputFDR_OrderbyPval)[metaOutputFDR_OrderbyPval[,7]<0.05 & 
                                        metaOutputFDR_OrderbyPval[,6]>5 & 
                                        metaOutputFDR_OrderbyPval[,3]<0.00001 & 
                                         is.na(metaOutputFDR_OrderbyPval[,1])==FALSE]
-# [1] "Col5a1"        "Nars"          "Rgs10"         "Shisa7"        "Tmem267"       "Prmt1"         "Tceal3"       
-# [8] "Prr7"          "Stk32c"        "Usp32"         "Ramp3"         "Pou1f1"        "P2ry12"        "Tdrd7"        
-# [15] "Zmat3"         "1810021B22Rik" "Rad23b"        "Actr1a"        "Cmpk2"         "Pcdhb20"       "Lor"          
-# [22] "Klhl7"         "Acsbg1"        "Lrrtm3"        "Map10"         "Ptk2"          "Gmds"          "Med20"        
-# [29] "Lonrf2"        "Pex26"         "Adam9"         "Rwdd4a"        "Sqor"          "Lrpap1"        "Gm26782"      
-# [36] "Exosc7"        "Zfx"           "Opn3"          "Crym"          "Hax1"          "Spink10"       "Stard3nl"     
-# [43] "Hsd11b1"       "Zfp397"        "Tpst1"         "Rora"          "Ccdc85b"       "Clpp"          "Nudt18"       
-# [50] "Pycr2"         "Ankrd39"       "Amz2"          "Slc7a10"       "Slc39a12"      "Srcin1"        "Trappc6b"     
-# [57] "Hnrnpa2b1"     "Casp8"         "Nxnl2"         "Tubg2"         "Hdgfl2"        "Kcnq2"         "Kmt5c"        
-# [64] "Blvrb"         "Ndfip1"        "Rab5c"         "Ptdss1"        "Ptgds"         "Smg6"          "Ssx2ip"       
-# [71] "Impdh2"        "Ndufa5"        "Htr1d"         "Dbpht2"        "Top2b"         "Snrnp27"       "Dnase1l1"     
-# [78] "Eef2"          "Or13c7"        "Fam98a"        "Dmap1"         "Pdcd7"         "Lypd1"         "Fgf12" 
+# [1] "Erdr1"         "Lman2l"        "1810021B22Rik" "Pvalb"         "Bnip3"         "Sf3b3"        
+# [7] "Ccne1"         "Gm26782"       "1110059G10Rik" "Trappc6b"      "Bloc1s5"       "Grk3"         
+# [13] "Tbc1d17"       "Irgm1"         "Hs2st1"        "Nol7"          "Hsf5"          "Ccl6"         
+# [19] "Gpcpd1"        "B230217C12Rik" "Ypel4"         "Gnl3"          "Asb11"         "Abcc5"        
+# [25] "Asf1b"  
 
 
 
 #What if we look at the correlation between datasets again, 
 #but only using the top genes found in all 7 datasets?
 sum(metaOutputFDR[,7]<0.05 & metaOutputFDR[,6]>6, na.rm=TRUE)
-#[1] 334
+#[1] 150
 
 TopGenesInAll11Datasets<-row.names(metaOutputFDR)[metaOutputFDR[,7]<0.05 & 
                                                     metaOutputFDR[,6]>6 & 
                                                     is.na(metaOutputFDR[,6])==FALSE]
 
 cor(as.matrix(MetaAnalysis_FoldChanges[which(MetaAnalysis_FoldChanges$x%in%TopGenesInAll11Datasets),-1]), use="pairwise.complete.obs")
-# GSE109315_StressResilient_Vs_Control GSE109315_StressSusceptible_Vs_Control
-# GSE109315_StressResilient_Vs_Control                             1.00000000                              0.5375206
-# GSE109315_StressSusceptible_Vs_Control                           0.53752056                              1.0000000
-# GSE114224_Left_CSDS_vs_Control                                   0.13681265                              0.2019750
-# GSE114224_Right_CSDS_vs_Control                                  0.12049250                              0.1967166
-# GSE81672_StressResilient_Vs_Control                              0.46818413                              0.5896635
-# GSE81672_StressSusceptible_Vs_Control                            0.52699504                              0.4097039
-# GSE85472_CSDS_vs_Control                                         0.10861635                              0.2040945
-# GSE81587_CUMS_vs_Control                                         0.19611815                              0.4029892
-# GSE102556.1_CUMS_vs_Control                                      0.36607396                              0.4685374
-# GSE151807_CUMS_vs_Control                                        0.07924778                              0.1567104
-# GSE114224_Left_CSDS_vs_Control GSE114224_Right_CSDS_vs_Control
-# GSE109315_StressResilient_Vs_Control                        0.1368127                      0.12049250
-# GSE109315_StressSusceptible_Vs_Control                      0.2019750                      0.19671655
-# GSE114224_Left_CSDS_vs_Control                              1.0000000                      0.91708130
-# GSE114224_Right_CSDS_vs_Control                             0.9170813                      1.00000000
-# GSE81672_StressResilient_Vs_Control                         0.3783022                      0.36447062
-# GSE81672_StressSusceptible_Vs_Control                       0.1469268                      0.17146001
-# GSE85472_CSDS_vs_Control                                    0.3053087                      0.35246259
-# GSE81587_CUMS_vs_Control                                    0.1129144                      0.10399474
-# GSE102556.1_CUMS_vs_Control                                 0.1139123                      0.08344762
-# GSE151807_CUMS_vs_Control                                   0.2714816                      0.24452804
-# GSE81672_StressResilient_Vs_Control GSE81672_StressSusceptible_Vs_Control
-# GSE109315_StressResilient_Vs_Control                             0.4681841                             0.5269950
-# GSE109315_StressSusceptible_Vs_Control                           0.5896635                             0.4097039
-# GSE114224_Left_CSDS_vs_Control                                   0.3783022                             0.1469268
-# GSE114224_Right_CSDS_vs_Control                                  0.3644706                             0.1714600
-# GSE81672_StressResilient_Vs_Control                              1.0000000                             0.4809467
-# GSE81672_StressSusceptible_Vs_Control                            0.4809467                             1.0000000
-# GSE85472_CSDS_vs_Control                                         0.1883060                             0.1321393
-# GSE81587_CUMS_vs_Control                                         0.3499361                             0.1458025
-# GSE102556.1_CUMS_vs_Control                                      0.4277913                             0.3582670
-# GSE151807_CUMS_vs_Control                                        0.2396167                             0.1146241
-# GSE85472_CSDS_vs_Control GSE81587_CUMS_vs_Control GSE102556.1_CUMS_vs_Control
-# GSE109315_StressResilient_Vs_Control                  0.1086164                0.1961182                  0.36607396
-# GSE109315_StressSusceptible_Vs_Control                0.2040945                0.4029892                  0.46853741
-# GSE114224_Left_CSDS_vs_Control                        0.3053087                0.1129144                  0.11391228
-# GSE114224_Right_CSDS_vs_Control                       0.3524626                0.1039947                  0.08344762
-# GSE81672_StressResilient_Vs_Control                   0.1883060                0.3499361                  0.42779135
-# GSE81672_StressSusceptible_Vs_Control                 0.1321393                0.1458025                  0.35826704
-# GSE85472_CSDS_vs_Control                              1.0000000                0.2111827                  0.07215520
-# GSE81587_CUMS_vs_Control                              0.2111827                1.0000000                  0.19596813
-# GSE102556.1_CUMS_vs_Control                           0.0721552                0.1959681                  1.00000000
-# GSE151807_CUMS_vs_Control                             0.1887835                0.2149992                 -0.00974468
+# GSE109315_StressResilient_Vs_Control
+# GSE109315_StressResilient_Vs_Control                             1.00000000
+# GSE109315_StressSusceptible_Vs_Control                           0.25952129
+# GSE81672_StressResilient_Vs_Control                              0.18700912
+# GSE81672_StressSusceptible_Vs_Control                            0.14156332
+# GSE85472_CSDS_vs_Control                                         0.39137414
+# GSE81587_CUMS_vs_Control                                         0.30969220
+# GSE102556.1_CUMS_vs_Control                                      0.07490278
+# GSE151807_CUMS_vs_Control                                        0.15493221
+# GSE109315_StressSusceptible_Vs_Control
+# GSE109315_StressResilient_Vs_Control                                0.2595213
+# GSE109315_StressSusceptible_Vs_Control                              1.0000000
+# GSE81672_StressResilient_Vs_Control                                 0.5443559
+# GSE81672_StressSusceptible_Vs_Control                               0.3939384
+# GSE85472_CSDS_vs_Control                                            0.6931646
+# GSE81587_CUMS_vs_Control                                            0.4994263
+# GSE102556.1_CUMS_vs_Control                                         0.4054365
+# GSE151807_CUMS_vs_Control                                           0.6914966
+# GSE81672_StressResilient_Vs_Control
+# GSE109315_StressResilient_Vs_Control                             0.1870091
+# GSE109315_StressSusceptible_Vs_Control                           0.5443559
+# GSE81672_StressResilient_Vs_Control                              1.0000000
+# GSE81672_StressSusceptible_Vs_Control                            0.6606140
+# GSE85472_CSDS_vs_Control                                         0.7461881
+# GSE81587_CUMS_vs_Control                                         0.5381781
+# GSE102556.1_CUMS_vs_Control                                      0.3544077
+# GSE151807_CUMS_vs_Control                                        0.7268791
+# GSE81672_StressSusceptible_Vs_Control GSE85472_CSDS_vs_Control
+# GSE109315_StressResilient_Vs_Control                               0.1415633                0.3913741
+# GSE109315_StressSusceptible_Vs_Control                             0.3939384                0.6931646
+# GSE81672_StressResilient_Vs_Control                                0.6606140                0.7461881
+# GSE81672_StressSusceptible_Vs_Control                              1.0000000                0.5463830
+# GSE85472_CSDS_vs_Control                                           0.5463830                1.0000000
+# GSE81587_CUMS_vs_Control                                           0.4962940                0.6004824
+# GSE102556.1_CUMS_vs_Control                                        0.1354695                0.4671167
+# GSE151807_CUMS_vs_Control                                          0.5099246                0.8154062
+# GSE81587_CUMS_vs_Control GSE102556.1_CUMS_vs_Control
+# GSE109315_StressResilient_Vs_Control                  0.3096922                  0.07490278
+# GSE109315_StressSusceptible_Vs_Control                0.4994263                  0.40543648
+# GSE81672_StressResilient_Vs_Control                   0.5381781                  0.35440772
+# GSE81672_StressSusceptible_Vs_Control                 0.4962940                  0.13546952
+# GSE85472_CSDS_vs_Control                              0.6004824                  0.46711671
+# GSE81587_CUMS_vs_Control                              1.0000000                  0.11352018
+# GSE102556.1_CUMS_vs_Control                           0.1135202                  1.00000000
+# GSE151807_CUMS_vs_Control                             0.5570914                  0.35519214
 # GSE151807_CUMS_vs_Control
-# GSE109315_StressResilient_Vs_Control                  0.07924778
-# GSE109315_StressSusceptible_Vs_Control                0.15671041
-# GSE114224_Left_CSDS_vs_Control                        0.27148158
-# GSE114224_Right_CSDS_vs_Control                       0.24452804
-# GSE81672_StressResilient_Vs_Control                   0.23961665
-# GSE81672_StressSusceptible_Vs_Control                 0.11462414
-# GSE85472_CSDS_vs_Control                              0.18878351
-# GSE81587_CUMS_vs_Control                              0.21499920
-# GSE102556.1_CUMS_vs_Control                          -0.00974468
-# GSE151807_CUMS_vs_Control                             1.00000000
+# GSE109315_StressResilient_Vs_Control                   0.1549322
+# GSE109315_StressSusceptible_Vs_Control                 0.6914966
+# GSE81672_StressResilient_Vs_Control                    0.7268791
+# GSE81672_StressSusceptible_Vs_Control                  0.5099246
+# GSE85472_CSDS_vs_Control                               0.8154062
+# GSE81587_CUMS_vs_Control                               0.5570914
+# GSE102556.1_CUMS_vs_Control                            0.3551921
+# GSE151807_CUMS_vs_Control                              1.0000000
 
 pdf("Heatmap_CorMatrix_PFC_StressDatasets_GenesFDR05inAll.pdf", height=10, width=10)
 heatmap(cor(as.matrix(MetaAnalysis_FoldChanges[which(MetaAnalysis_FoldChanges$x%in%TopGenesInAll11Datasets),
@@ -797,3 +791,4 @@ CorMatrixTopGenes<-cor(as.matrix(MetaAnalysis_FoldChanges[which(MetaAnalysis_Fol
                        use="pairwise.complete.obs")
 
 write.csv(CorMatrixTopGenes, "CorMatrix_PFC_StressDatasets_GenesFDR05inAll.csv")
+
