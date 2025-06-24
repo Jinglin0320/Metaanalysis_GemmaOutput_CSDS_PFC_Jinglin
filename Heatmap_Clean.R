@@ -1,6 +1,6 @@
 ###### Do the top 50 genes#############
 
-load("/oak/stanford/scg/lab_twc/JinglinXiong/BAP/Output/workspace.RData")
+load(".../Output/workspace.RData")
 #####Top 50 genes#########
 gene_top_50 <- rownames(metaOutputFDR_OrderbyPval)[1:50]
 Rows_Interest<-MetaAnalysis_FoldChanges_ForMeta$x%in%gene_top_50
@@ -11,7 +11,7 @@ str(Log2FC_Subsetted_Matrix)
 
 library(pheatmap)
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_50_color_scale.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_50_color_scale.pdf",
     height = 11, width = 8.5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -29,7 +29,7 @@ pheatmap(Log2FC_Subsetted_Matrix,
 dev.off()
 
 ########With smaller width##############
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_50_color_scale_narrow.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_50_color_scale_narrow.pdf",
     height = 11, width = 5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -57,7 +57,7 @@ str(Log2FC_Subsetted_Matrix)
 
 library(pheatmap)
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_all_color_scale.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_all_color_scale.pdf",
     height = 11, width = 8.5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -74,7 +74,7 @@ pheatmap(Log2FC_Subsetted_Matrix,
 
 dev.off()
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_all_color_scale_narrow.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_all_color_scale_narrow.pdf",
     height = 11, width = 5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -104,7 +104,7 @@ str(Log2FC_Subsetted_Matrix)
 
 library(pheatmap)
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_all_color_scale_allcomparison.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_all_color_scale_allcomparison.pdf",
     height = 11, width = 8.5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -122,7 +122,7 @@ pheatmap(Log2FC_Subsetted_Matrix,
 dev.off()
 
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_TopMetaGenes_all_color_scale_allcomparison_narrow.pdf",
+pdf(".../Output/Heatmap_TopMetaGenes_all_color_scale_allcomparison_narrow.pdf",
     height = 11, width = 5)
 
 pheatmap(Log2FC_Subsetted_Matrix,
@@ -166,7 +166,7 @@ rownames(Log2FC_Matrix) <- Log2FC_Subsetted$x
 
 # 4. Draw the heatmap
 library(pheatmap)
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_Top50_MetaGenes_AllComparisons.pdf",
+pdf(".../Output/Heatmap_Top50_MetaGenes_AllComparisons.pdf",
     height = 11, width = 8.5)
 pheatmap(
   Log2FC_Matrix,
@@ -181,7 +181,7 @@ pheatmap(
 )
 dev.off()
 
-pdf("/labs/twc/JinglinXiong/BAP/Output/Heatmap_Top50_MetaGenes_AllComparisons_narrow.pdf",
+pdf(".../Output/Heatmap_Top50_MetaGenes_AllComparisons_narrow.pdf",
     height = 11, width = 5)
 pheatmap(
   Log2FC_Matrix,
