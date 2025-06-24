@@ -4,7 +4,7 @@
 library(dplyr)
 library(stringr)  
 # Read and filter the GSEA table
-GSEA_Results <- read.csv("/labs/twc/JinglinXiong/BAP_Updated_2025/Output/GSEA_Results.csv")
+GSEA_Results <- read.csv("..../BAP_Updated_2025/Output/GSEA_Results.csv")
 GSEA_Results_sig <- subset(GSEA_Results, padj < 0.05)
 
 # Get the meta-analysis significant genes
@@ -37,4 +37,4 @@ str(dge_list_filt)
 # Add the filtered gene lists back to the data frame
 GSEA_Results_sig$leadingEdge_sig <- sapply(dge_list_filt,
                                        paste, collapse = ",")
-write.csv(GSEA_Results_sig, "/labs/twc/JinglinXiong/BAP_Updated_2025/Output/GSEA_Results_sig.csv")
+write.csv(GSEA_Results_sig, "..../Output/GSEA_Results_sig.csv")
